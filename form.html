@@ -86,12 +86,12 @@
                 <label>Last Name (Surname):<span
                 
                  class="asterisk">*</span></label>
-                <input type="text" name="lastName" style="width: 75%" />
+                <input type="text" name="lastName" style="width: 75%" required/>
 
                 <label>First Name:<span
                 
                  class="asterisk">*</span></label>
-                <input type="text" name="firstName" style="width: 40%" />
+                <input type="text" name="firstName" style="width: 40%" required/>
 
                 <label>Middle Name:</label>
                 <input type="text" name="middleName" style="width: 20%" />
@@ -101,7 +101,7 @@
                 <label>Main Address (City Address):<span
                 
                  class="asterisk">*</span></label>
-                <input type="text" name="address" class="line-input" />
+                <input type="text" name="address" class="line-input" required/>
               </div>
 
               <div class="form-group">
@@ -113,7 +113,7 @@
                 <label>Email:<span
                 
                  class="asterisk">*</span></label>
-                <input type="email" name="email" style="width: 40%" />
+                <input type="email" name="email" style="width: 40%" required/>
 
                 <label>Contact Number:<span class="asterisk">*</span></label>
                 <input type="tel" name="phone" style="width: 30%" pattern="[0-9]{10,15}" />
@@ -124,7 +124,7 @@
               <div class="form-group inline-fields">
                 <label>Civil Status:<span class="asterisk">*</span></label>
 
-                <select name="civilStatus" style="width: 30%" class="line-input">
+                <select name="civilStatus" style="width: 30%" class="line-input" required>
                   <option value="">-- Select Status --</option>
                   <option value="Single">Single</option>
                   <option value="Married">Married</option>
@@ -144,7 +144,7 @@
                 <input type="text" name="weight" style="width: 15%" />
 
                 <label>Birth Date:</label><span class="asterisk">*</span></label>
-                <input type="date" name="birthDate" style="width: 30%" />
+                <input type="date" name="birthDate" style="width: 30%" required/>
               </div>
 
               <div class="form-group inline-fields">
@@ -161,8 +161,12 @@
                 <input type="text" name="courseTaken" style="width: 11%" />
 
                 <label>Gender:</label>
-                <!--Please make this a dropdown with the following choices: Male, Female-->
-                <input type="text" name="gender" style="width: 10%" />
+                <!--Please make this a dropdown with the following choices: Male, Female  DONE!!-->
+                <select name="gender" style="width: 10%" class="line-input">
+                  <option value="">-- Select --</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
 
                 <label>Experience:</label>
                 <input type="text" name="experience" style="width: 30%"
