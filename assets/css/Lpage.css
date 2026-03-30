@@ -46,7 +46,7 @@ a {
 
 .header {
   /* position: fixed; */
-  /* width: 100%; */
+  width: 100%;
   /* top: 0;
   left: 0; */
   background-color: #d6e4fa;
@@ -58,7 +58,8 @@ a {
 
 .nav {
   position: relative;
-  height: 4.5rem;
+  /* width: 80%; */
+  height: 4.4rem;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: space-between;
@@ -66,15 +67,16 @@ a {
 }
 
 .nav__logo {
-  font-size: 23px;
+  font-size: 28px;
   font-weight: 700;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   position: absolute;
   line-height: 2rem;
+  margin-top: 17px;
 }
 
 .logo {
-  height: 65px;
+  height: 59px;
   margin-right: 3px;
   /* display: block; */
   max-width: 100%;
@@ -192,16 +194,17 @@ footer {
   }
 
   .nav__logo {
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 700;
-
-    line-height: 2rem;
+    /* line-height: 2rem; */
+    margin-top: 12px;
   }
 
   .logo {
-    height: 60px;
+    height: 50px;
     margin-right: 3px;
     /* display: block; */
     max-width: 100%;
+    font-weight: bold;
   }
 }

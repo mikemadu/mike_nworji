@@ -79,7 +79,7 @@
             <div class="personal-left">
               <div class="form-group">
                 <label>WHAT TO APPLY FOR:<span class="asterisk">*</span></label> 
-                <input type="text" class="line-input" name="applyFor" />
+                <input type="text" class="line-input" name="applyFor" required/>
               </div>
 
               <div class="form-group inline-fields">
@@ -116,7 +116,7 @@
                 <input type="email" name="email" style="width: 40%" required/>
 
                 <label>Contact Number:<span class="asterisk">*</span></label>
-                <input type="tel" name="phone" style="width: 30%" pattern="[0-9]{10,15}" />
+                <input type="tel" name="phone" style="width: 30%" pattern="[0-9]{10,15}" required/>
               </div>
 
               
@@ -124,7 +124,7 @@
               <div class="form-group inline-fields">
                 <label>Civil Status:<span class="asterisk">*</span></label>
 
-                <select name="civilStatus" style="width: 30%" class="line-input" required>
+                <select name="civilStatus" style="width: 150px" class="line-input" required>
                   <option value="">-- Select Status --</option>
                   <option value="Single">Single</option>
                   <option value="Married">Married</option>
@@ -162,7 +162,7 @@
 
                 <label>Gender:</label>
                 <!--Please make this a dropdown with the following choices: Male, Female  DONE!!-->
-                <select name="gender" style="width: 10%" class="line-input">
+                <select name="gender" style="width: 100px" class="line-input">
                   <option value="">-- Select --</option>
                   <option value="Male">Male</option>
                   <option value="Female">Female</option>
@@ -182,7 +182,7 @@
             <!-- RIGHT SIDE (PICTURE BOX) -->
             <div class="personal-right">
               Picture <br />
-              <input type="file" name="photo" accept="image/*" />
+              <input type="file" name="photo" accept=".jpg, .jpeg, .png" />
             </div>
           </div>
 
