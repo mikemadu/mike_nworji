@@ -1,34 +1,36 @@
+<?php 
+session_start();
+if(isset($_SESSION['current_user'])) {
+
+}
+else {
+  header("location:"."/healthcare-project/login.php");
+  die();
+}
+?>
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Panel</title>
-    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/dashboard.css" />
   </head>
   <body>
+    
     <div class="dashboard-wrapper">
-      <!-- LOGIN -->
-      <div id="loginSection" class="login-box">
-        <h1>GOD'S WILL INTERNATIONAL PLACEMENT, INC</h1>
-        <p class="subtitle">Medical Professionals Application Form</p>
-
-        <h2>Admin Login</h2>
-
-        <input id="username" placeholder="Username" />
-        <input id="password" type="password" placeholder="Password" />
-
-        <button onclick="login()">Login</button>
-      </div>
-
-      <!-- DASHBOARD -->
-      <div id="adminSection" class="dashboard-box hidden">
+      <!-- Dashboard -->
+     <div id="adminSection" class="dashboard-box">
         <h1>GOD'S WILL INTERNATIONAL PLACEMENT, INC</h1>
         <p class="subtitle">Medical Professionals Application Form</p>
 
         <div class="top-bar">
           <h2>Applications Dashboard</h2>
-          <button onclick="logout()">Logout</button>
+          <button id="btnLogout">Logout</button>
+          
         </div>
 
         <input type="text" id="searchName" placeholder="Search by Name" />
@@ -51,8 +53,12 @@
           <tbody id="tableBody"></tbody>
         </table>
       </div>
+
+     
     </div>
 
-    <script src="../assets/js/main.js"></script>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/logout.js"></script>
+    <!-- <script src="./assets/js/login.js"></script> -->
   </body>
 </html>

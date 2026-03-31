@@ -11,10 +11,6 @@ body {
   font-size: 16px;
 }
 
-/* ul {
-  list-style: none;
-} */
-
 a {
   text-decoration: none;
 }
@@ -22,17 +18,7 @@ a {
 .container {
   max-width: 1330px;
   margin: auto;
-  /* margin-inline: 16px; */
 }
-
-/* .grid {
-  display: grid;
-  gap: 1.5rem;
-} */
-
-/* .section {
-  padding-block: 5rem 1rem;
-} */
 
 .section__title {
   text-align: center;
@@ -203,7 +189,6 @@ footer {
   .logo {
     height: 50px;
     margin-right: 3px;
-    /* display: block; */
     max-width: 100%;
     font-weight: bold;
   }

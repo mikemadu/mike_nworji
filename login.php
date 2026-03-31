@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="./assets/css/login.css" />
+  </head>
+  <body>
+    
+    <div class="dashboard-wrapper">
+      <!-- LOGIN -->
+      <div id="loginSection" class="login-box">
+        <h1>GOD'S WILL INTERNATIONAL PLACEMENT, INC</h1>
+        <p class="subtitle">Medical Professionals Application Form</p>
+
+        <h2>Admin Login</h2>
+
+        <input id="username" placeholder="Username" required />
+
+        <input id="password" type="password" placeholder="Password" required />
+
+        <button class="btnlogin" id="btnLogin">LOGIN</button>
+      </div>
+
+     
+    </div>
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/login.js"></script>
+  </body>
+</html>
