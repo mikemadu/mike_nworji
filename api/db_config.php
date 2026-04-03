@@ -1,8 +1,8 @@
 <?php
 //database credentials go here
 $dbHost = "localhost";
-$dbUser = "xxxxxx";
-$dbPass = "xxxxxx";
-$dbName = "xxxxxx";
+$dbUser = "root";
+$dbPass = "2004";
+$dbName = "mike_nworji";
 
 ?>
