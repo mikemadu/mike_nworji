@@ -1,4 +1,11 @@
 <?php
+
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+
+
+
 //ini_set('display_errors', '1');  //REMOVE the comment during development
 require_once "db_config.php"; //database configuration 
 
@@ -43,3 +50,4 @@ if (isset($_POST)) { //check if form has been submitted
 
    
 }
+?>

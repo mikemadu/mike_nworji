@@ -3,8 +3,8 @@ class Database
 {
     private $servername = "localhost";
     private $username = "root";
-    private $password = "";
-    private $dbname = "healthcare_db";
+    private $password = "mikeNj";
+    private $dbname = "mike_nworji";
     public $conn=null;
 
     public function __construct()
