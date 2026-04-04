@@ -1,8 +1,7 @@
 <?php
 
-// ini_set('display_errors', 1);
-// error_reporting(E_ALL);
-
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 
 
 //ini_set('display_errors', '1');  //REMOVE the comment during development
@@ -10,7 +9,8 @@ require_once "db_config.php"; //database configuration
 
 if (isset($_POST)) { //check if form has been submitted
     $formData = $_POST; // if so, store all key/value pairs in a variable
-    $keys = array_keys($formData); //get all the keys(field names) into an array
+    $formData = array_filter($_POST); // if so, store all key/value pairs in a variable after removing any empty fields
+    // $keys = array_keys($formData); //get all the keys(field names) into an array
    
     // Connect to MySQL
     $conn = new mysqli($dbHost, $dbUser, $dbPass, $dbName); // Using mysqli here
@@ -40,6 +40,7 @@ if (isset($_POST)) { //check if form has been submitted
 
     $result = $conn->query($insertQuery);//run the query on the database
      // Close connection
+     
     $response = array();//prepare a response
     if ($result) {
     $last_id = $conn->insert_id; //get the id of the last inserted record
