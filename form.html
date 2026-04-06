@@ -11,7 +11,7 @@
 <body>
   <div class="form-container">
     <div id="formSection">
-      <form id="applicationForm" method="POST" action="api/application.php" enctype="multipart/form-data">
+      <form id="applicationForm" method="POST" action="api/application_service.php" enctype="multipart/form-data">
         <!-- ALL YOUR FORM CONTENT -->
 
         <!-- HEADER -->
@@ -173,13 +173,14 @@
             <!-- RIGHT SIDE (PICTURE BOX) -->
             <div class="personal-right">
               <div style='height:200px; width: 200px; border: 1px solid blue;margin:0 auto;overflow: hidden;'>
-              
+                <img id='img-preview' style='height:100%;display: none;margin: 0 auto;' />
               </div>
               <div>
-             <label style='color:red; font-weight: bold;cursor: pointer;padding:5px;' for='pick-photo' >
-              Select 2X2 Photo <input id='pick-photo' type="file" name="photo" accept=".jpg, .jpeg, .png" /></label>
+                <label style='color:red; font-weight: bold;cursor: pointer;padding:5px;' for='photo-picker'>
+                  Select 2X2 Photo <input id='photo-picker' type="file" name="photo"
+                    accept=".jpg, .jpeg, .png" />
+                </label>
               </div>
-              
             </div>
           </div>
 
