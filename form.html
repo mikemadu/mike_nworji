@@ -11,7 +11,7 @@
 <body>
   <div class="form-container">
     <div id="formSection">
-      <form id="applicationForm" method="POST" action="api/application_service.php" enctype="multipart/form-data">
+      <form id="applicationForm" method="POST" action="api/application.php" enctype="multipart/form-data">
         <!-- ALL YOUR FORM CONTENT -->
 
         <!-- HEADER -->
@@ -37,18 +37,36 @@
             <div>DATE: <span class="date" id="file-date"></span></div>
           </div>
 
-          <div class="checkbox-group">
-            <label><input type="checkbox" name="chk_directhire" value="1" />
-              DIRECT HIRE</label>
-            <label><input type="checkbox" name="chk_gwiphire" value="1" /> GWIP
-              HIRE</label>
-            <label><input type="checkbox" name="chk_indirecthire" value="1" />
-              PRINCIPAL'S INDIRECT HIRE</label>
-            <label>Referred By / Principal:<input type="text" name="referredBy"
-                style="border: none; border-bottom: 1px solid #000" />
-            </label>
+
+           <!-- MODE OF REFERENCE -->
+          <div class="section-box">
+            <div class="section-title-Mode">
+              <span>MODE OF REFERENCE</span>(Please put a check mark where
+              applicable)
+            </div>
+
+            <div class="checkbox-group">
+              <label
+                ><input type="checkbox" name="chk_directhire" value="1" />
+                DIRECT HIRE</label
+              >
+              <label
+                ><input type="checkbox" name="chk_gwiphire" value="1" /> GWIP
+                HIRE</label
+              >
+              <label
+                ><input type="checkbox" name="chk_indirecthire" value="1" />
+                PRINCIPAL'S INDIRECT HIRE</label
+              >
+              <label
+                >Referred By / Principal:<input
+                  type="text"
+                  name="referredBy"
+                  style="border: none; border-bottom: 1px solid #000"
+                />
+              </label>
+            </div>
           </div>
-        </div>
 
         <!-- COUNTRY OF CHOICE -->
         <div class="country-choice">
@@ -434,14 +452,7 @@
                 Occupational Therapist
               </label>
 
-              <!-- RIGHT SIDE (PICTURE BOX) -->
-              <div class="personal-right">
-                <div style="height: 200px; width: 200px; border: 1px solid blue; margin: 0 auto; overflow: hidden;">
-                  <div><label style="color: red; font-weight: bold; cursor: pointer; padding: 5px;" for="pick-photo">
-                  select 2x2 Photo <input id='pick-photo' type="file" name="photo" accept=".jpg, .jpeg, .png" /></label>
-                  </div>
-                </div>
-              </div>
+              
             </div>
 
             <!-- PORTFOLIO -->
@@ -938,14 +949,7 @@
 
       </form>
 
-          <br />
-          <div style="text-align: center">
-            <button type="submit" style="cursor: pointer" id="submitBtn">Submit Application</button>
-            <div id="responseMessage"></div>
-          </div>
-
-        </form>
-
+         
 
       </div>
     </div>
@@ -956,9 +960,7 @@
     </div>
   
 
-     <dialog id="success-dialog">
-      <p id="success-message"></p>
-    </dialog>
+   
 
 
 
@@ -973,3 +975,6 @@
 
 </html>
 
+  <dialog id="success-dialog">
+      <p id="success-message"></p>
+  </dialog>

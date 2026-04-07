@@ -87,10 +87,12 @@ body {
 
 /* CHECKBOX LINE */
 .checkbox-group {
+  /* border: 1px solid red; */
   display: flex;
   gap: 10px;
   align-items: center;
   flex-wrap: wrap;
+
 }
 
 .checkbox-group label {

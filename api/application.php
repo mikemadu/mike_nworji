@@ -1,6 +1,5 @@
 <?php
 
-
 //ini_set('display_errors', '1');  //REMOVE the comment during development
 require_once "db_config.php"; //database configuration 
 
@@ -38,7 +37,7 @@ if (isset($_POST)) { //check if form has been submitted
    
     $insertQuery = "INSERT INTO `$tablename` ($all_fieldnames) VALUES ($all_values)";
     //Our insert query will now look like: INSERT INTO `application` (lastName, firstName, address, ...) VALUES ('nworji', 'mike', 'ama computer rd', ...);
-   
+
     $result = $conn->query($insertQuery);//run the query on the database
      // Close connection
      
