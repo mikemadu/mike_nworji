@@ -17,7 +17,7 @@ export class ApplicationListComponent {
   applications = signal<any[]>([]); // Array to hold the list of applications
 
   errorMessage: string = ''; // Variable to hold error messages
-  photoURL = 'api/uploads/'; // Base URL for application photos
+  photoURL = '../api/uploads/'; // Base URL for application photos
 
   isAdmin = this.sharedService.thisUserIsAdmin();
 
